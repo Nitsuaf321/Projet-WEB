@@ -1,5 +1,10 @@
-p {
+body {
+    background-image: url("/Images/AI-generated-car-design-scaled.png");
+}
+h1 {
     color:blue;
+    display: flex;
+    justify-content: center;
 }
  
 nav {
