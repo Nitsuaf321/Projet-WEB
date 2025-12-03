@@ -6,6 +6,11 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
+div {
+    color: white;
+}
+
 nav {
 display: flex;
 align-items: center;
