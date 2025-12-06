@@ -1,36 +1,102 @@
-body {
-    background-image: url("/Images/AI-generated-car-design-scaled.png");
-}
-h1 {
-    color:blue;
-    display: flex;
-    justify-content: center;
-}
-
-div {
-    color: white;
-}
-
-nav {
-display: flex;
-align-items: center;
-justify-content: space-around;
-}
- 
-.btn{
-display: inline-block; 
-padding: 12px 24px;
-background-color: black;
-border: 2px solid silver;
-color: white;
-text-decoration: none;
-font-size: 18px;
-border-radius: 40px;
-transition: all 0.3s ease;
-cursor: pointer;
-}
-.btn:hover {
-background-color: white;
-color: black;
-text-decoration: underline;
-}
+ body {
+            background-image: url("/Images/AI-generated-car-design-scaled.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            color: blue;
+            display: flex;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .btn {
+            display: inline-block; 
+            padding: 12px 24px;
+            background-color: black;
+            border: 2px solid silver;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 40px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: white;
+            color: black;
+            text-decoration: underline;
+        }
+        
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            color: white;
+            margin: 2rem 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        
+        .section p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            body {
+                padding: 10px;
+            }
+            
+            .section {
+                padding: 1rem;
+            }
+        }

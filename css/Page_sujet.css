@@ -12,6 +12,10 @@ div {
     color: white;
 }
 
+h2 {
+    color: white;
+}
+
 nav {
 display: flex;
 align-items: center;
