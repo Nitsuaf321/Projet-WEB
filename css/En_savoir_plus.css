@@ -100,3 +100,47 @@
                 padding: 1rem;
             }
         }
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.flipping-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.card {
+    width: 50px;
+    height: 60px;
+    background-color: #1101fb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    animation: flip 2s infinite;
+}
+
+.card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+@keyframes flip {
+    0%, 100% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+}
